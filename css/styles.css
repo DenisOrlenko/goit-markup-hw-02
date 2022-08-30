@@ -1,0 +1,264 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --title-text-color: #212121;
+  --logo-black-color: #000000;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+}
+
+/* основной цвет текста (прозрачный) #757575  */
+
+/* вторичный цвет текста (черный) #212121 */
+
+/* третий цвет текста (белый) #ffffff */
+
+/* основной фон (белый)  #ffffff */
+
+/* второй фон (белый с прозрачностью) #f5f4fA (наша команда) */
+
+/* третий фон футера + эффиктивные решения (серый) #2f303a */
+
+/* акцент #2196f3 */
+
+/* Добавление в Body: основной цвет и шрифт текста + фон */
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* .list Убираем маркеры с нужных нам списков */
+.list {
+  list-style: none;
+}
+
+/* -----------------HEADER-------------------------- */
+/* .logo-web - синий логотип */
+a.logo {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* WebStudio - черный */
+a .accent.black {
+  color: var(--logo-black-color);
+}
+
+/* site-nav цвет списка ссылок */
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+/* site-nav цвет ссылки при наведении */
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* current - Позиционирование открытой ссылки на текущей странице*/
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* задается цвет списку контактов в шапке */
+.contact .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+/* задается цвет подсвечивания ссылки при наведении курсором */
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+
+/* ---------------------HERO----------------------- */
+/* фон Героя */
+.solutions {
+  background-color: var(--footer-bg-color);
+}
+
+/* h1 Задается цвет заголовку Героя */
+.hero-title {
+  color: var(--secondary-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* button применение формления к кнопке */
+.hero .hero-button {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-style: none;
+}
+
+/* --------------------SECTION-2------------------- */
+/* применение ЗАГОЛОВКА к однотипным секциям, в которых одинаковый цвет заголовка */
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* h3 оформление-1 */
+.feature-list .title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* p - оформление-1 */
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* --------------------SECTION-3------------------- */
+
+/* --------------------SECTION-4------------------- */
+/* фон к section */
+.masters {
+  background-color: var(--secondary-bg-color);
+}
+
+/* h3 оформление -2 */
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/* p - оформление-2 */
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/* -----------------------ФУТЕР---------------- */
+/* фон - футер */
+.page-footer {
+  background-color: var(--footer-bg-color);
+}
+
+.page-footer .logo {
+  margin-bottom: 20px;
+
+  text-decoration: none;
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* Studio - белый цвет */
+.logo .accent.white {
+  color: var(--secondary-text-color);
+}
+
+.footer-contacts .city-link {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* phone - оформление */
+.footer-contacts .mail-link,
+.footer-contacts .phone-link {
+  color: var(--footer-text-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-social-title {
+  color: var(--secondary-bg-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------- */
+/* ------------------ПОРТФОЛИО---------------- */
+/* ------------------------------------------- */
+
+/* button применение формления к кнопке */
+.directions .button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  cursor: pointer;
+  border-style: none;
+}
+
+/* Кнопка - наведеие и фокус */
+.directions .button:hover,
+.directions .button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* -------------------------------- */
+.example-list .example-title {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.example-list .example-text {
+  line-height: 1.87;
+}

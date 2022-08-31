@@ -37,20 +37,22 @@ body {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 /* -----------------HEADER-------------------------- */
 /* .logo-web - синий логотип */
-a.logo {
-  text-decoration: none;
+.logo {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.03em;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 
 /* WebStudio - черный */
-a .accent.black {
+.logo .accent.black {
   color: var(--logo-black-color);
 }
 
@@ -100,7 +102,6 @@ a .accent.black {
 /* h1 Задается цвет заголовку Героя */
 .hero-title {
   color: var(--secondary-text-color);
-  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -110,11 +111,10 @@ a .accent.black {
 }
 
 /* button применение формления к кнопке */
-.hero .hero-button {
+.hero-button {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -135,7 +135,6 @@ a .accent.black {
 
 /* h3 оформление-1 */
 .feature-list .title {
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -165,7 +164,6 @@ a .accent.black {
 
 /* p - оформление-2 */
 .team-list .text {
-  font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
@@ -176,25 +174,12 @@ a .accent.black {
   background-color: var(--footer-bg-color);
 }
 
-.page-footer .logo {
-  margin-bottom: 20px;
-
-  text-decoration: none;
-  color: var(--accent-color);
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
 /* Studio - белый цвет */
 .logo .accent.white {
   color: var(--secondary-text-color);
 }
 
-.footer-contacts .city-link {
-  text-decoration: none;
+.address-list .city-link {
   color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 400;
@@ -203,22 +188,13 @@ a .accent.black {
 }
 
 /* phone - оформление */
-.footer-contacts .mail-link,
-.footer-contacts .phone-link {
+.address-list .mail-link,
+.address-list .phone-link {
   color: var(--footer-text-color);
-  text-decoration: none;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-}
-
-.footer-social-title {
-  color: var(--secondary-bg-color);
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
 }
 
 /* ------------------------------------------- */
@@ -230,7 +206,6 @@ a .accent.black {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -253,7 +228,6 @@ a .accent.black {
 /* -------------------------------- */
 .example-list .example-title {
   color: var(--title-text-color);
-  font-style: normal;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;

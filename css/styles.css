@@ -134,14 +134,14 @@ body {
 }
 
 /* h3 оформление-1 */
-.feature-list .title {
+.feature-item .title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
 /* p - оформление-1 */
-.feature-list .text {
+.feature-item .text {
   font-size: 14px;
   line-height: 1.71;
 }
@@ -155,7 +155,7 @@ body {
 }
 
 /* h3 оформление -2 */
-.team-list .title {
+.team-item .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -163,7 +163,7 @@ body {
 }
 
 /* p - оформление-2 */
-.team-list .text {
+.team-item .text {
   line-height: 1.18;
   text-align: center;
 }
@@ -191,7 +191,7 @@ body {
 .address-list .mail-link,
 .address-list .phone-link {
   color: var(--footer-text-color);
-  /* font-style: normal; */
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

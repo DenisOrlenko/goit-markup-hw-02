@@ -5,6 +5,7 @@
   --title-text-color: #212121;
   --logo-black-color: #000000;
   --accent-color: #2196f3;
+  --hero-button-background-color: #188CE8;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
@@ -23,6 +24,9 @@
 /* третий фон футера + эффиктивные решения (серый) #2f303a */
 
 /* акцент #2196f3 */
+
+/* кнопка Hero - фон #188CE8 */
+
 
 /* Добавление в Body: основной цвет и шрифт текста + фон */
 body {
@@ -66,17 +70,13 @@ body {
   color: var(--logo-black-color);
 }
 
-/* ----Общие текстовые стили ---- */
-.site-nav,
-.contact {
+/* site-nav цвет списка ссылок */
+.site-nav .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
 
-/* site-nav цвет списка ссылок */
-.site-nav .link {
   color: var(--title-text-color);
 }
 
@@ -93,6 +93,11 @@ body {
 
 /* задается цвет списку контактов в шапке */
 .contact .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
   color: var(--primary-text-color);
 }
 
@@ -123,13 +128,18 @@ body {
 .hero-button {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
   border-style: none;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-button-background-color);
 }
 
 /* --------------------SECTION-2------------------- */
@@ -141,18 +151,20 @@ body {
   text-align: center;
 }
 
-.feature-item {
-  font-size: 14px;
-}
-
 /* h3 оформление-1 */
 .feature-item .title {
+  font-size: 14px;
   line-height: 1.14;
+
+  color: var(--title-text-color);
 }
 
 /* p - оформление-1 */
 .feature-item .text {
+  font-size: 14px;
   line-height: 1.71;
+
+  color: var(--primary-text-color);
 }
 
 /* --------------------SECTION-3------------------- */
@@ -163,20 +175,27 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
+/* фон к элементу списка */
 .team-item {
-  line-height: 1.19;
+  background-color: var(--secondary-text-color);
 }
 
 /* h3 оформление -2 */
 .team-item .title {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.19;
   text-align: center;
+
+  color: var(--title-text-color);
 }
 
 /* p - оформление-2 */
 .team-item .text {
+  line-height: 1.19;
   text-align: center;
+
+  color: var(--primary-text-color);
 }
 
 /* -----------------------ФУТЕР---------------- */
@@ -190,20 +209,32 @@ body {
   color: var(--secondary-text-color);
 }
 
-.address-list {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
 .address-list .city-link {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+
   color: var(--secondary-text-color);
 }
 
 /* phone - оформление */
 .address-list .mail-link,
 .address-list .phone-link {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+
   color: var(--footer-text-color);
+}
+
+.address-list .city-link:hover,
+.address-list .city-link:focus,
+.address-list .mail-link:hover,
+.address-list .mail-link:focus,
+.address-list .phone-link:hover,
+.address-list .phone-link:focus {
+  color: var(--accent-color);
+
 }
 
 /* ------------------------------------------- */
@@ -243,5 +274,6 @@ body {
 }
 
 .example-list .example-text {
+  font-size: 16px;
   line-height: 1.88;
 }

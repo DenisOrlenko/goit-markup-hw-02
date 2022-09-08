@@ -57,7 +57,6 @@ body {
 .logo {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.03em;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -67,14 +66,18 @@ body {
   color: var(--logo-black-color);
 }
 
-/* site-nav цвет списка ссылок */
-.site-nav .link {
-  color: var(--title-text-color);
+/* ----Общие текстовые стили ---- */
+.site-nav,
+.contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
+}
+
+/* site-nav цвет списка ссылок */
+.site-nav .link {
+  color: var(--title-text-color);
 }
 
 /* site-nav цвет ссылки при наведении */
@@ -91,11 +94,6 @@ body {
 /* задается цвет списку контактов в шапке */
 .contact .link {
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 /* задается цвет подсвечивания ссылки при наведении курсором */
@@ -106,7 +104,7 @@ body {
 
 /* ------------------HERO-------------------- */
 /* фон Героя */
-.solutions {
+.hero {
   background-color: var(--footer-bg-color);
 }
 
@@ -126,9 +124,9 @@ body {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
   border-style: none;
@@ -141,19 +139,19 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
+}
+
+.feature-item {
+  font-size: 14px;
 }
 
 /* h3 оформление-1 */
 .feature-item .title {
-  font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
 }
 
 /* p - оформление-1 */
 .feature-item .text {
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -165,17 +163,19 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
+.team-item {
+  line-height: 1.19;
+}
+
 /* h3 оформление -2 */
 .team-item .title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
   text-align: center;
 }
 
 /* p - оформление-2 */
 .team-item .text {
-  line-height: 1.18;
   text-align: center;
 }
 
@@ -190,22 +190,20 @@ body {
   color: var(--secondary-text-color);
 }
 
-.address-list .city-link {
-  color: var(--secondary-text-color);
+.address-list {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.address-list .city-link {
+  color: var(--secondary-text-color);
 }
 
 /* phone - оформление */
 .address-list .mail-link,
 .address-list .phone-link {
   color: var(--footer-text-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 /* ------------------------------------------- */
@@ -219,8 +217,8 @@ body {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
+  line-height: 1.62;
+  letter-spacing: inherit;
   border-radius: 4px;
   cursor: pointer;
   border-style: none;
@@ -245,5 +243,5 @@ body {
 }
 
 .example-list .example-text {
-  line-height: 1.87;
+  line-height: 1.88;
 }
